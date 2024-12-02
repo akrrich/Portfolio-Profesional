@@ -139,7 +139,7 @@ footer {
 .redes-sociales {
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 1px;
     flex-wrap: wrap; /* Para permitir que los iconos se acomoden en una nueva fila si es necesario */
 }
 
