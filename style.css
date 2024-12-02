@@ -115,7 +115,7 @@ main {
     }
 
     .redes-sociales {
-        flex-direction: column;
+        flex-direction: row;
         gap: 10px;
     }
 
@@ -139,7 +139,7 @@ footer {
 .redes-sociales {
     display: flex;
     justify-content: center;
-    gap: 1px;
+    gap: 12.5px;
     flex-wrap: wrap; /* Para permitir que los iconos se acomoden en una nueva fila si es necesario */
 }
 
