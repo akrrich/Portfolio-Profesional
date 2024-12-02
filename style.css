@@ -1,0 +1,265 @@
+h1, h2 {
+    font-family: 'Acme', sans-serif;
+    color: #2a2a2a;
+}
+
+body {
+    font-family: 'Pixelify Sans', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #0077cc;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.perfil {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.foto-perfil {
+    flex: 1;
+    max-width: 200px;
+    margin-right: 20px;
+}
+
+.foto-perfil img {
+    width: 200px; 
+    height: 200px;
+    border-radius: 50%; 
+    border: 2px solid #0077cc; 
+    object-fit: cover;
+}
+
+.descripcion-perfil {
+    flex: 2;
+}
+
+.descripcion-perfil p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin: 10px 0;
+}
+
+.descripcion-perfil strong {
+    color: #0077cc;
+}
+
+.lenguajes {
+    font-family: 'Acme', sans-serif;
+    color: #0077cc;
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    main {
+        padding: 15px;
+    }
+
+    .perfil {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .foto-perfil {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 1.6em;
+    }
+
+    .repositorio-imagen-img {
+        max-width: 200px;
+    }
+
+    .repositorio-descripcion {
+        font-size: 0.9em;
+    }
+
+    .boton-repositorio {
+        padding: 8px 16px;
+    }
+
+    .redes-sociales {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .redes-icono img {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+footer {
+    background-color: #1a1a1a; 
+    color: white;
+    text-align: center;
+    padding: 20px; 
+    position: relative; 
+    width: 100%; 
+    box-sizing: border-box; 
+    margin-top: 40px; 
+}
+
+.redes-sociales {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Para permitir que los iconos se acomoden en una nueva fila si es necesario */
+}
+
+.redes-icono img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.redes-icono img:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+.repositorios-lista {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+}
+
+.repositorio-item {
+    display: flex;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s ease;
+    will-change: transform; 
+}
+
+.repositorio-item:hover {
+    transform: scale(1.05);
+}
+
+.repositorio-contenido {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.repositorio-imagen {
+    flex: 1;
+    margin-right: 20px;
+    max-width: 350px; 
+    height: auto;
+}
+
+.repositorio-imagen-img {
+    width: 100%;  
+    height: auto;  
+    border-radius: 10px;
+    object-fit: cover; 
+    transition: transform 0.3s ease; 
+}
+
+.repositorio-item:hover .repositorio-imagen-img {
+    transform: scale(1.05); 
+}
+
+.repositorio-descripcion {
+    flex: 2;
+    font-size: 1.1em;
+}
+
+.repositorio-descripcion p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.boton-repositorio {
+    display: inline-block;
+    background-color: #0077cc;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.boton-repositorio:hover {
+    background-color: #005fa3;
+}
+
+@media (max-width: 768px) {
+    .repositorio-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .repositorio-imagen {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .repositorio-descripcion {
+        font-size: 1em;
+    }
+
+    .repositorio-imagen-img {
+        max-width: 250px; 
+    }
+}
+
+.boton-descarga {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.icono-descarga {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+}
